@@ -273,12 +273,12 @@ class Model(pl.LightningModule):
             what="Model",
         )
 
-        check_version(
-            "torch",
-            checkpoint["pyannote.audio"]["versions"]["torch"],
-            torch.__version__,
-            what="Model",
-        )
+        # check_version(
+        #     "torch",
+        #     checkpoint["pyannote.audio"]["versions"]["torch"],
+        #     torch.__version__,
+        #     what="Model",
+        # )
 
         check_version(
             "pytorch-lightning",
